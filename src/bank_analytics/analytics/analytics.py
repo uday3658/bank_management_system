@@ -63,6 +63,7 @@ def daily_transaction_volume(df: pd.DataFrame):
     return plt
 
 
+
 def top_active_accounts(df: pd.DataFrame, app_config: AppConfig) -> pd.DataFrame:
     return (
         df.groupby("accountno")
