@@ -1,0 +1,15 @@
+database:
+  host: localhost
+  user: root
+  database: bank_db
+  port: 3306
+
+app:
+  page_title: "Bank Transaction Analytics System"
+  high_value_std_multiplier: 2.0     # flag txns above mean + N*std
+  risk_high_quantile: 0.95           # top 5% amount + odd hour -> High risk
+  risk_medium_quantile: 0.75         # top 25% amount -> Medium risk
+  risk_night_hour_cutoff: 6          # txns before this hour are "odd hour"
+  top_active_accounts_n: 5
+  age_bins: [0, 25, 40, 100]
+  age_labels: ["Under 25", "25-40", "40+"]
