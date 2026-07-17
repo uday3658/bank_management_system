@@ -13,3 +13,4 @@ app:
   top_active_accounts_n: 5
   age_bins: [0, 25, 40, 100]
   age_labels: ["Under 25", "25-40", "40+"]
+
